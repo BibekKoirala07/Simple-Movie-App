@@ -393,18 +393,18 @@ const Register = () => {
           <button type="button" onClick={handleGoogle}>
             <i className="fa-brands fa-google"></i> Register with Google
           </button>
-          <button type="button" onClick={handleFacebook} disabled>
+          <button type="button" onClick={handleFacebook} disabled={true}>
             <i className="fa-brands fa-facebook"></i> Register with Facebook
           </button>
-          <button type="button" disabled>
+          <button type="button" disabled={true}>
             <i className="fa-brands fa-instagram" disabled></i> Register with
             Instagram
           </button>
-          <button type="button" onClick={handleTwitter} disabled>
+          <button type="button" onClick={handleTwitter} disabled={true}>
             <i className="fa-brands fa-twitter" disabled></i> Register with
             Twitter
           </button>
-          <button type="button" onClick={handleGit} disabled>
+          <button type="button" onClick={handleGit} disabled={true}>
             <i className="fa-brands fa-github" disabled></i> Register with
             Github
           </button>

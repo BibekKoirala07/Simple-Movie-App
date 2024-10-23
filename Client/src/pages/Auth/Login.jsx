@@ -327,18 +327,20 @@ const Login = () => {
           <button type="button" onClick={handleGoogle}>
             <i className="fa-brands fa-google"></i> Login with Google
           </button>
-          <button type="button" onClick={handleFacebook} disabled>
+          <button type="button" onClick={handleFacebook} disabled={true}>
             <i className="fa-brands fa-facebook"></i> Login with Facebook
           </button>
-          <button type="button" disabled>
-            <i className="fa-brands fa-instagram" disabled></i> Login with
-            Instagram
+          <button type="button" disabled={true}>
+            <i className="fa-brands fa-instagram" disabled={true}></i> Login
+            with Instagram
           </button>
-          <button type="button" onClick={handleTwitter} disabled>
-            <i className="fa-brands fa-twitter" disabled></i> Login with Twitter
+          <button type="button" onClick={handleTwitter} disabled={true}>
+            <i className="fa-brands fa-twitter" disabled={true}></i> Login with
+            Twitter
           </button>
-          <button type="button" onClick={handleGit} disabled>
-            <i className="fa-brands fa-github" disabled></i> Login with Github
+          <button type="button" onClick={handleGit} disabled={true}>
+            <i className="fa-brands fa-github" disabled={true}></i> Login with
+            Github
           </button>
           <div>
             <p>
