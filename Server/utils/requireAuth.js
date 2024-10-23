@@ -7,7 +7,7 @@ const requireAuth = async (req, res, next) => {
     throw Error("Sorry, Unauthorized Access");
   }
   try {
-    const match = await jwt.verify(token, process.env.SECRET);
+    const match = await jwt.verify(token, process.env.JWT_SECRET);
     if (!match) {
       throw Error("Wrong Credentials on Server Side");
     }

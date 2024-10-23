@@ -27,7 +27,7 @@ app.use("/user", userRouter);
 const dbURI =
   process.env.NODE_ENV === "production"
     ? process.env.PROD_MONGO_URI
-    : process.env.PROD_MONGO_URI;
+    : process.env.DEV_MONGO_URI;
 
 mongoose
   .connect(dbURI)
