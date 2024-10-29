@@ -179,7 +179,7 @@ const socialRegister = async (req, res) => {
     }
     const token = generateJwtToken(user._id);
     const { password: hashedPassword, photo: userPhoto, ...rest } = user._doc;
-    res.cookie("token", token, { expiresIn: "1h" });
+    res.cookie("token", token, { expiresIn: "30d" });
     return res.status(200).json({ ...rest, imageData: userPhoto });
   } catch (error) {
     return res.status(400).json({ error: error.message });
@@ -201,7 +201,7 @@ const socialLogin = async (req, res) => {
     }
     const token = generateJwtToken(user._id);
     const { password: hashedPassword, photo: userPhoto, ...rest } = user._doc;
-    res.cookie("token", token, { expiresIn: "1h" });
+    res.cookie("token", token, { expiresIn: "30d" });
     return res.status(200).json({ ...rest, imageData: userPhoto });
   } catch (error) {
     return res.status(400).json({ error: error.message });
